@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,8 @@
     <meta name="description"
         content=" Mi Dulce Lucía: pastelería artesanal, tortas premium y postres personalizados. Envíos a todo Buenos Aires.">
     <meta name="robots" content="index, follow">
+    <meta name="description" content="Servicio de pasteleria y catering">
+    <meta name="author" name="Fernando Medrano">
 
     <!--- bootstrasp-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,22 +27,25 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
+
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!---etiqueta para icono, con ia aprendi como usarla-->
 
-    <title>Mi Dulce Lucia</title>
+    <title>Mi Dulce Lucia | Torta de Pistacho </title>
 </head>
 
-<body>
+<body class="pages_tortas">
     <header>
-        <div class="logo" id="headerGrid">
-            <h1><a href="../index.html">Mi Dulce Lucia </h1></a>
+        <div class="logo headerGrid">
+            <h1><a href="../index.html">Dulce Lucia </a> </h1>
             <p class="eslogan">Sabores que celebran momentos </p>
         </div>
-        <div id="btnGrid">
+        <div class="btnGrid">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../pages/NuestraHistoria.html">Nosotros</a>
+                    <a class="nav-link active" aria-current="page" href=>Nosotros</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -48,11 +53,10 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../pages/productos.html">Productos</a>
+                                <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href=>Contacto</a><!--no lo linkie XQ YA TENIA 5 HTML INDIVIDIALES DE CADA TORTA-->
                             </li>
 
                         </ul>
@@ -61,18 +65,15 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <h2> Torta Chaja</h2>
+        <h2> Semi Frio Pisctacho</h2>
         <div class="img_torta">
             <div>
-                <img src="../img/chaja.jpeg" alt="Chaja"></a>
+                <img src="../img/semifrio_pistacho.jpeg" alt="Pistacho" class="img_page"></a>
             </div>
             <div class="descripcion_torta">
-                <p>Delicado bizcochuelo de vainilla, húmedo y esponjoso, relleno con abundante dulce de leche artesanal
-                    y suave crema chantilly. Se combina con duraznos seleccionados en su punto justo de maduración,
-                    aportando frescura y un equilibrio ideal de sabores. La preparación se corona con crujientes trozos
-                    de merengue, que añaden textura y un contraste irresistible. Un clásico de la repostería uruguaya,
-                    reinterpretado con elegancia y calidad premium.</p>
+                <p>Torta semifrío de pistacho elaborada con pasta de pistachos seleccionados y crema de alta calidad, logrando una textura suave, aireada y delicadamente untuosa. Su sabor equilibrado combina la intensidad natural del pistacho con notas sutiles de dulzura, ofreciendo una experiencia fresca y refinada. La base aporta un contraste ligero que realza el conjunto, mientras su terminación prolija y elegante la convierte en una opción ideal para cerrar una comida o disfrutar en cualquier momento con un toque de sofisticación.</p>
             </div>
 
         </div>
@@ -85,10 +86,7 @@
         </section>
 
 
-        <div> <a href="./pages/sobre_nosotros.html">
-                <h3>Nosotros</h3>
-            </a>
-
+        <div> <h3>Nosotros</h3>
         </div>
         <div>
             <h3>Medios de Pago</h3><!---aca podria linkiarlo a un especie de mercado pago o similar-->
@@ -105,6 +103,11 @@
 
 
     </footer>
+    <!--bootstrap scrip-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

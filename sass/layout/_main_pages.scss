@@ -1,0 +1,47 @@
+
+@use '../utilities/variables' as *;
+
+
+/*Paginas css  -------/*/
+.pages_tortas h2{
+    margin-top: 2%;
+}
+.img_torta{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.img_torta img{
+    width: 230px;
+    height: 230px;
+    border-radius: $radius-img;
+    object-fit: cover; 
+}
+.descripcion_torta{
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.boton_torta{
+    padding-bottom: 5%;
+}
+
+.historia{
+    width: 230px;
+    height: 230px;
+    border-radius: $radius-img;
+    object-fit: cover; 
+    display: flex;
+}
+
+/*pag chesscake-----------------*/
+
+.img_page{
+    
+}
+

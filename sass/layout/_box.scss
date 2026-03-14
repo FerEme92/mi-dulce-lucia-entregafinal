@@ -1,0 +1,159 @@
+@use '../utilities/variables' as *;
+@use '../component/mixin' as *;
+
+
+
+.container_grid div {
+    background-color: #A3B18A;
+    }
+
+
+
+.imgbox {   
+    width: 100%;
+    height: 260px;
+    border-radius: $radius-card;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.imgbox img{
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    max-height: 220px;
+    object-fit: cover;  
+    border-radius: $radius-card;
+}
+
+.textprod {
+    opacity: 0;  
+    border-radius: $radius-card;
+    position: relative; 
+    inset: 0; 
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    overflow: hidden; 
+}
+
+.imgbox:hover .textprod{
+    opacity: 1;
+    transform: scale(1.4);
+    z-index: 10;
+}
+
+
+/***/
+
+/* From Uiverse.io by gharsh11032000 */ 
+.card_op {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  height: 300px;
+  background-color: #f2f2f2;
+  border-radius: $radius-card;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px  #eedac8;;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card_op  img {
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    max-height: 220px;
+    object-fit: cover;  
+    border-radius: $radius-card;
+
+}
+
+.card_op:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: $radius-card;
+  background-color: #eedac8;;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card_op:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__header {
+  height: 40px;
+  background-color: #eedac8;
+  @include flex (center, center)
+}
+
+.card__title  {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card_op:hover svg {
+  scale: 0;
+}
+
+.detalle {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+
+/*---------card otros prod con Grid -------*/ 
+.card__content p{
+  color: $p_card_prod;
+}
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    padding: 15px;
+}
+
+.box1 { grid-area: box1; }
+.box2 { grid-area: box2; }
+.box3 { grid-area: box3; }
+.box4 { grid-area: box4; }
+
+.box5 { grid-area: box5; }
+.box6 { grid-area: box6; }
+.box7 { grid-area: box7; }
+.box8 { grid-area: box8; }
+
+.box9 { grid-area: box9; }
+.box10 { grid-area: box10; }
+.box11 { grid-area: box11; }
+.box12 { grid-area: box12; }
+
+.box13 { grid-area: box13; }
+.box14 { grid-area: box14; }
+.box15 { grid-area: box15; }
+.box16 { grid-area: box16; }
+
+
+
+.tazasImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

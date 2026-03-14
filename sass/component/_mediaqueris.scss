@@ -1,0 +1,51 @@
+@media (min-width: 768px) {
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo .  botonera";
+    align-items: center;
+    padding: 20px;
+}
+.container_grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+    "box5 box6" 
+    "box7 box8"
+    "box9 box10"
+    "box11 box12"
+    "box13 box14" 
+    "box15 box16";
+}
+.headerGrid {
+    grid-area: logo;
+}
+.btnGrid {
+    grid-area: botonera;
+}
+}
+
+@media (min-width: 1024px) {
+
+.container_grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8"
+    "box9 box10 box11 box12"
+    "box13 box14 box15 box16";
+}
+.tortas {
+    flex-wrap: wrap;
+}
+.Nosotros {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+}
+
+
+
+
+

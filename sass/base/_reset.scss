@@ -1,0 +1,66 @@
+/*todas las modificaciones que estan compartidas en cada html*/
+
+@use '../utilities/variables' as *;
+@use '../component/mixin' as*;
+
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+body{
+    background-color: $bg-body;
+    width: 100%
+}
+/*-------Google fuentes----(cuando puse bootrap se me rompio el stilo de las letras x eso separe y puse medidas a cada uno---*/
+body, h1, h2, h4{
+    color: $color-titulo;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    font-size: $fs-base;
+    }
+h1{
+    font-size: 2.5rem;
+    
+}
+
+h2{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+h3{
+    font-size: 1.2rem;
+}
+h4{
+    font-size: 1rem ;
+}
+
+h3, p, label, input, textarea{
+    font-family: "Montserrat", sans-serif;
+    }
+
+.eslogan{
+    margin-top: -3%;
+    color: $text-adicional;
+}
+
+/*----sectores p espacio entre ellos Card "mas pediddos"*------*/
+.sectores{
+    padding: 40px;
+}
+.logo{
+    @include flex( $direction: column)
+    ; 
+}
+
+a{
+    text-decoration: none;
+    color: $text-adicional;
+    padding-left: 20px;
+    text-align: center;
+
+}

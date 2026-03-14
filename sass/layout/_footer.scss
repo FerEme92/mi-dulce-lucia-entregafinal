@@ -1,0 +1,13 @@
+
+@use '../component/mixin' as *;
+
+footer{
+    background-color: #6B705C;
+    width: 100%;
+    height: 100%;
+    @include flex(space-between);    
+    flex-wrap: wrap;
+    
+}
+
+

@@ -25,34 +25,35 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
-
-
-
+<!---etiqueta para icono, con ia aprendi como usarla-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!---etiqueta para icono, con ia aprendi como usarla-->
+    
 
-    <title>Mi Dulce Lucia</title>
+    <title>Mi Dulce Lucia | Productos</title>
 </head>
 
 <body>
     <header>
-        <div class="logo" id="headerGrid">
-            <h1><a href="../index.html">Mi Dulce Lucia </h1></a>
+        <div class="logo headerGrid">
+            <h1><a href="../index.html">Dulce Lucia </a> </h1>
             <p class="eslogan">Sabores que celebran momentos </p>
         </div>
-        <div id="btnGrid">
+        <div class="btnGrid">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="../pages/NuestraHistoria.html">Nosotros</a>
+                    <a class="nav-link active" aria-current="page" href=>Nosotros</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
-
                             <li class="nav-item">
-                                <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href=>Productos</a>
+                                <!--no lo linkie XQ YA TENIA 5 HTML INDIVIDIALES DE CADA TORTA-->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href=>Contacto</a><!--no lo linkie XQ YA TENIA 5 HTML INDIVIDIALES DE CADA TORTA-->
                             </li>
 
                         </ul>
@@ -61,121 +62,233 @@
             </nav>
         </div>
     </header>
+
     <main>
 
         <section class="sectores">
-            <h3> Nuestros Productos </h3> <!--no hice el link a cada producto, xq considere q al a
-                        haberlo hecho en otros es suficiente-->
-            <div class=>
-                <div class="container_grid">
-                    <div id="box1" class="imgbox">
-                        <img src="../img/limon_pie.jpeg" alt="Limon Pie">
-                        <div class="textprod">
-                            <h3>Limon Pie </h3>
-                            <p> precio : $ 35000 </p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
+                <h3> Otros Productos </h3>
+            <main class="container_grid">
+                <div class="box1 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Limon Pie</h4>
+                        </div>
+                            <img src="../img/limon_pie2.jpeg" alt="Limon Pie">
+                        <div class="card__content">
+                            <h3 class="card__title">Limon Pie</h3>
+                            <p> precio : $25000</p>
+                            <p class="detralle"> Cheesecake cremoso y suave, con base crocante y sabor equilibrado.
+                            Para saber más, haz click.</p>                            
                         </div>
                     </div>
-                    <div id="box2" class="imgbox">
-                        <img src="../img/red_velvet.jpeg" alt="Red Velvet">
-                        <div class="textprod">
-                            <h3> Red Velvet</h3>
-                            <p> precio : $55000</p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box3" class="imgbox">
-                        <img src="../img/rogel.jpeg" alt="Rogel">
-                        <div class="textprod">
-                            <h3> Rogel </h3>
-                            <p> precio : $35000 </p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box4" class="imgbox">
-                        <img src="../img/semifrio_pistacho.jpeg" alt="semi frio Pistacho">
-                        <div class="textprod">
-                            <h3> Semi Frio Pistacho </h3>
-                            <p> precio : $45000</p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores ad expedita quo placeat fugit
-                                perspiciatis autem, reiciendis corporis, ullam quae laudantium illum dolores.</p>
-                        </div>
-                    </div>
-                    <div id="box5" class="imgbox">
-                        <img src="../img/stroisser.jpeg" alt="stroisser">
-                        <div class="textprod">
-                            <h3> Stroiser</h3>
-                            <p> precio : $35000</p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores ..</p>
-                        </div>
-                    </div>
-                    <div id="box6" class="imgbox">
-                        <img src="../img/tarta_frutilla.jpeg" alt="Tarta Frutilla">
-                        <div class="textprod">
-                            <h3> Tarta de Frutilla </h3>
-                            <p> precio : $45000</p>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box7" class="imgbox">
-                        <img src="../img/avocado.jpg" alt="avocado">
-                        <div class="textprod">
-                            <h3>Avocado toust </h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box8" class="imgbox">
-                        <img src="../img/cafe-con-medialunasjpg.jpg" alt="cafeymedialunas">
-                        <div class="textprod">
-                            <h3> Cafe con Medialunas</h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box9" class="imgbox">
-                        <img src="../img/cafe-y-tostado.jpg" alt="cafe y tostado">
-                        <div class="textprod">
-                            <h3> Cafe y tostado</h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box10" class="imgbox">
-                        <img src="../img/cafeconleche.jpg" alt="cafe con leche">
-                        <div class="textprod">
-                            <h3>cafe con leche</h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box11" class="imgbox">
-                        <img src="../img/paquete-cafe-1.jpg" alt="paquete cafe1">
-                        <div class="textprod">
-                            <h3>paquete cafe</h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-                    <div id="box12" class="imgbox">
-                        <img src="../img/paquete-cafe-2.jpg" alt="paquete cafe2">
-                        <div class="textprod">
-                            <h3>paquete cafe</h3>
-                            <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-                                minima ab recusandae rerum impedit eaque maiores .</p>
-                        </div>
-                    </div>
-
                 </div>
-            </div>
+                <div class="box2 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Red Velvet</h4>
+                        </div>
+                            <img src="../img/red_velvet.jpeg" alt="Red Velvet">
+                        <div class="card__content">
+                            <h3 class="card__title"> Red Velvet</h3>
+                            <p> precio : $55000</p>
+                            <p class="detralle"> Bizcochuelo aterciopelado, suave y húmedo, con delicadas notas de
+                            cacao y crema equilibrada. Para saber más, haz click.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="box3 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Rogel</h4>
+                        </div>
+                            <img src="../img/rogel.jpeg" alt="Rogel">
+                        <div class="card__content">
+                            <h3 class="card__title"> Rogel </h3>
+                            <p> precio : $35000 </p>
+                            <p class="detralle">Capas crocantes de masa fina unidas con abundante dulce de leche y
+                            terminación suave. Para saber más, haz click.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="box4 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Tarta de Frutilla</h4>
+                        </div>
+                            <img src="../img/tarta_frutilla.jpeg" alt="Tarta Frutilla">
+                        <div class="card__content">
+                            <h3 class="card__title"> Tarta de Frutilla </h3>
+                            <p> precio : $35000 </p>
+                            <p class="detralle">Masa crocante, crema suave y frutillas frescas que aportan frescura y color. Para saber más, haz click.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box5 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Stroiser</h4>
+                        </div>
+                            <img src="../img/stroisser.jpeg" alt="stroisser">
+                        <div class="card__content">
+                            <h3 class="card__title"> Stroiser</h3>
+                                <p> precio : $35000</p>
+                                <p class="detralle">Base crocante con relleno suave y cubierta crumble dorada,
+                                equilibrando textura y sabor. Para saber más, haz click.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box6 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Cokie</h4>
+                        </div>
+                        <img src="../img/taza_cokies.jpeg" alt="3taza" class="tazasImg" >
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Cokie </h3>
+                                <p> precio : $45000</p>
+                                <p class="detralle">Taza con diseño de cookie, original y encantadora, ideal para sumar
+                                un toque dulce a tu café. Para saber más, haz click.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box7 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Crema</h4>
+                        </div>
+                        <img src="../img/taza_crema.jpeg" alt="1taza" class="tazasImg" >
+                        <div class="card__content">
+                            <h3 class="card__title">Taza Crema</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle"> Taza de cerámica con diseño delicado y detalles sutiles, ideal para
+                            disfrutar bebidas calientes con estilo y calidez. Para saber más, haz click.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box8 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Helado</h4>
+                        </div>
+                        <img src="../img/taza_helado.jpeg" alt="1taza" class="tazasImg">
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Helado</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">Taza de porcelana con forma de cucurucho, coronada con crema como una bocha de helado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box9 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Muffin</h4>
+                        </div>
+                        <img src="../img/sandwich.jpg" alt="1taza" class="sandwich">
+                        <div class="card__content">
+                            <h3 class="card__title"> Sandwich</h3>
+                            <p> precio : $5000</p>
+                            <p class="detralle">Sándwich fresco y sabroso, preparado con ingredientes de calidad y pan recién horneado.</p>
+                        </div>
+                    </div>
+                </div>             
+                <div class="box10 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Torta Chocolate</h4>
+                        </div>
+                        <img src="../img/torta_chocolate.jpeg" alt="torta chocolate" class="torta Chocolate mil pelos">
+                        <div class="card__content">
+                            <h3 class="card__title"> Torta de Chocolate mil pelos</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">capas intensas de chocolate con cobertura suave y sabor irresistible. Perfecta para amantes del chocolate.</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="box11 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Tortitas De Pistacho</h4>
+                        </div>
+                        <img src="../img/mini_pistacho.jpeg" alt="torta pistacho" class="torta pistacho">
+                        <div class="card__content">
+                            <h3 class="card__title"> Torta Semi Pistacho</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">Torta de pistacho suave y aromática, con crema delicada y sabor elegante a frutos secos.</p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="box12 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Helado</h4>
+                        </div>
+                        <img src="../img/taza_bocha_helado.jpeg" alt="1taza" class="tazasImg">
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Helado</h3>
+                            <p> precio : $15000</p>
+                            <p class="detralle">Taza de porcelana con diseño de dos bochas de helado: rosa y celeste, sobre base crema.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box13 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Helado</h4>
+                        </div>
+                        <img src="../img/taza_helado2.jpeg" alt="1taza" class="tazasImg">
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Helado</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">Taza de porcelana con forma de cucurucho, coronada con crema como una bocha de helado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box14 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Pastel</h4>
+                        </div>
+                        <img src="../img/taza_pastel.jpeg" alt="1taza" class="tazasImg">
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Helado</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">taza de porcelana con forma de pastel, diseño dulce y original que parece un deliciosa torta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box15 imgbox">
+                    <div class="card_op">
+                        <div class="card__header">
+                            <h4 class="card__title">Taza Pastel</h4>
+                        </div>
+                        <img src="../img/taza_pastel2.jpeg" alt="1taza" class="tazasImg">
+                        <div class="card__content">
+                            <h3 class="card__title"> Taza Helado</h3>
+                            <p> precio : $45000</p>
+                            <p class="detralle">taza de porcelana con forma de pastel, diseño dulce y original que parece un deliciosa torta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box16 imgbox">      
+                <div class="card_op">
+                    <div class="card__header">
+                    <h4 class="card__title">Mini Tortas</h4>
+                    </div>
+                    <img src="../img/mini_torta2.jpeg" alt="1taza" class="tazasImg">
+                    <div class="card__content">
+                        <h3 class="card__title"> Mini Tortas</h3>
+                        <p> precio : $45000</p>
+                        <p class="detralle">Mini tortas surtidas en caja estilo sushi, con varias degustaciones de sabores para disfrutar y compartir.</p>
+                    </div>
+                </div>
+                </div>.
         </section>
+    </main> <!-- container_grid -->
+
+</section>
     </main>
+    
+
     <footer>
         <section class="sectores">
             <div>Copyright "Mi Dulce lucia"</div>
@@ -183,11 +296,7 @@
         </section>
 
 
-        <div> <a href="./pages/sobre_nosotros.html">
-                <h3>Nosotros</h3>
-            </a>
-
-        </div>
+        <div><h3>Nosotros</h3></div>
         <div>
             <h3>Medios de Pago</h3><!---aca podria linkiarlo a un especie de mercado pago o similar-->
             <i class="fa-brands fa-cc-visa"></i>

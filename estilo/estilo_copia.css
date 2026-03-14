@@ -1,0 +1,330 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/*---css index  ------*/
+body{
+    background-color: #FAF7F0;
+    color: #2E2E2E  
+}
+/*-------Google fuentes----(cuando puse bootrap se me rompio el stilo de las letras x eso separe y puse medidas a cada uno---*/
+body, h1, h2{
+    color: #5C4937;
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    font-size: 1rem;
+    }
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+
+h3, p, label, input, textarea{
+    font-family: "Montserrat", sans-serif;
+    }
+/*----sectores p espacio entre ellos Card "mas pediddos"*------*/
+.sectores{
+    padding: 40px;
+}
+.logo{
+    display: flex;
+    flex-direction: column; /*etiqueta aprendida con ia/youtube*/
+    
+}
+.eslogan{
+    margin-top: -3%;
+    color:  #E6D8A2;
+}
+/*-------*/
+header{
+    background-color: #A3B18A ; /* #a3b18a #97aa77*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo . botonera";
+}
+#headerGrid{
+    grid-area: logo;
+}
+#btnGrid{
+    grid-area: botonera;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: #E6D8A2;
+    text-decoration: none;
+    padding-left: 20px;
+    text-align: center;
+
+}
+
+
+button{
+    background-color: #7b9254 ;
+}
+
+header div nav{
+    display: flex;
+}
+
+
+
+
+h2{
+    font-style: italic;
+    text-align: center;
+}
+.lomaspedidos{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15%;
+}
+.tortas{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;   
+    gap:20px; 
+    
+}
+
+@media (max-width: 576px) {
+    #tortas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tortas-card {
+        width: 90%;
+    }
+}
+    @media (max-width: 768px) {
+    #tortas {
+        flex-wrap: wrap;
+    }
+
+    .tortas-card {
+        width: 45%;
+    }
+}
+
+
+.tortas-card{
+    background-color: #EEE8D5;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 30px;
+}
+
+.tortas-card img{
+    width: 200px;
+    height:auto;
+    border-radius: 30px;
+    justify-content: baseline;
+}
+
+.tazasImg{
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*---------card con Grid -------*/ 
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-row: auto;
+    background: #EEE8D5;
+    position: relative;
+    grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box5 box6 box7 box8"
+    "box9 box10 box11 box12"
+    ;
+    
+}
+@media (min-max:768){
+    .container_grid{
+        
+    }
+}
+.container_grid div{
+    background-color: #eedac8;
+
+}
+
+
+.imgbox {   
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.imgbox img{
+    width: 100%;
+    height: auto;
+    min-height: 160px;
+    max-height: 220px;
+    object-fit: cover;  
+    border-radius: 30PX;
+}
+
+.textprod {
+    opacity: 0;  
+    border-radius: 15px;
+    position: absolute; 
+    inset: 0; 
+    padding: 10px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    overflow: hidden; 
+}
+
+.imgbox:hover .textprod{
+    opacity: 1;
+    transform: scale(1.4);
+    z-index: 10;
+}
+
+
+
+
+#box1{grid-area: box1;}
+#box2{grid-area: box2;}
+#box3{grid-area: box3;}
+#box4{grid-area: box4;}
+#box5{grid-area: box5;}
+#box6{grid-area: box6;}
+#box7{grid-area: box7;}
+#box8{grid-area: box8;}
+#box9{grid-area: box9;}
+#box10{grid-area: box10;}
+#box11{grid-area: box11}
+#box12{grid-area: box12;}
+
+
+
+/* nosotros*/
+
+.container_grid_nosotros{
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-areas:
+        "colum_img Colum_text";
+    gap: 20px;
+}
+#grid1{grid-area:colum_img;}
+#grid2{grid-area: Colum_text;}
+
+
+@media (max-width: 768px) {
+    .container_grid_nosotros{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "colum_img"
+            "Colum_text";
+    }
+}  
+-----------------------
+
+.tazasImg{
+    width: 230px;
+    height: 230px;
+    border-radius: 80%;
+    object-fit: cover; 
+}
+
+
+
+.pedidos form{
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+input, textarea{
+    border-radius: 200px;
+    border: solid #EEE8D5;
+}
+#comentarios{
+    margin-bottom: 20px;
+}
+button{
+    border-radius: 10%;
+    padding: 2%;
+}
+
+.Nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+footer{
+    background-color: #6B705C;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*Paginas css  -------/*/
+.pages_tortas, h2{
+    margin-top: 2%;
+}
+.img_torta{
+    display:flex;
+    justify-content: center;
+}
+.img_torta img{
+    width: 230px;
+    height: 230px;
+    border-radius: 80%;
+    object-fit: cover; 
+}
+.descripcion_torta{
+    font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.buton_torta{
+    padding-bottom: 5%;
+}
+.historia{
+    width: 230px;
+    height: 230px;
+    border-radius: 80%;
+    object-fit: cover; 
+    display: flex;
+}
+
+
+
+

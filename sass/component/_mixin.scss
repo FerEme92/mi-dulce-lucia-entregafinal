@@ -1,0 +1,11 @@
+@mixin fluid-text($min, $ideal, $max) {
+    font-size: clamp($min, $ideal, $max);
+}
+
+@mixin flex($justify: flex-start, $align:stretch, $direction: row ){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+

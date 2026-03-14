@@ -1,0 +1,45 @@
+@use '../component/mediaqueris' as *;
+@use '../component/mixin' as *;
+@use '../utilities/variables' as *;
+
+button{
+    background-color: $bg-header;
+}
+
+h1 {
+    @include fluid-text(1.8rem, 5vw, 2.5rem);
+}
+
+h2 {
+    @include fluid-text(1.5rem, 4vw, 2rem);
+}
+
+
+.lomaspedidos{
+    @include flex(center);
+}
+
+.tortas{
+    @include flex(center);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*pag nosotros*/
+
+.container_grid_nosotros{
+    display: grid;
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-areas:
+        "colum_img Colum_text";
+    gap: 20px;
+}
+.grid1{grid-area:colum_img;}
+.grid2{grid-area: Colum_text;}
+
+.Nosotros{
+    @include flex(center, center);
+    padding: 5%;
+}
+
+

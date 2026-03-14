@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,8 @@
     <meta name="description"
         content=" Mi Dulce Lucía: pastelería artesanal, tortas premium y postres personalizados. Envíos a todo Buenos Aires.">
     <meta name="robots" content="index, follow">
-
+    <meta name="description" content="Servicio de pasteleria y catering">
+    <meta name="author" name="Fernando Medrano">
     <!--- bootstrasp-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -31,19 +32,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!---etiqueta para icono, con ia aprendi como usarla-->
 
-    <title>Mi Dulce Lucia</title>
+    <title>Mi Dulce Lucia | Sabores que celebran momentos</title>
 </head>
 
 <body>
     <header>
-        <div class="logo" id="headerGrid">
+        <div class="logo headerGrid">
             <h1>Mi Dulce Lucia </h1>
             <p class="eslogan">Sabores que celebran momentos </p>
         </div>
-        <div id="btnGrid">
+        <div class="btnGrid">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="./pages/NuestraHistoria.html">Nosotros</a>
+                    <a class="nav-link active" aria-current="page" href=>Nosotros</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -51,11 +52,11 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./pages/productos.html">Productos</a>
+                                <a class="nav-link active" aria-current="page" href="/pages/productos.html">Productos</a>
+                                <!--no lo linkie XQ YA TENIA 5 HTML INDIVIDIALES DE CADA TORTA-->
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                                <a class="nav-link active" aria-current="page" href=>Contacto</a><!--no lo linkie XQ YA TENIA 5 HTML INDIVIDIALES DE CADA TORTA-->
                             </li>
 
                         </ul>
@@ -64,215 +65,219 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section>
-            <section class="sectores" id="#inicio">
+            <section class="sectores" >
                 <h2> Bienvenido </h2>
 
             </section>
             <section class="lomaspedidos ">
-                <h3> Lo mas Pedidos</h3>
+                <h3> Lo Mas Pedidos</h3>
             </section>
             <div class="container">
-
-                <section id="tortas" class="row">
-
-                    <div class="tortas-card">
-                        <h3> Brownie Frutos Rojos</h3>
-                        <a href="./pages/brownie _frutos _rojos.html"><img src="./img/brownie_frutosrojos.jpeg"
-                                alt="brownie frutos rojos"></a>
-
-                        <p> precio : $25000</p>
+                <section class="tortas row">
+                    <!-- From Uiverse.io by vamsidevendrakumar -->
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3 >Brw Frutos Rojos</h3>
+                                <a href="./pages/brownie _frutos _rojos.html"><img src="./img/brownie_frutosrojos.jpeg"
+                                        alt="brownie frutos rojos"></a>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card__title">Brw Frutos Rojos</h3>
+                                <a href="./pages/brownie _frutos _rojos.html"><img src="./img/brownie_frutosrojos.jpeg"
+                                    alt="brownie frutos rojos"></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="tortas-card">
-                        <h3> Chaja</h3>
-                        <a href="./pages/torta_chaja.html"><img src="./img/chaja.jpeg" alt="Torta chaja"></a>
+                    
 
-                        <p> precio : $35000</p>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3 > Chessecake </h3>
+                                <a href="./pages/chesscake.html"><img src="./img/chesscake.jpeg" alt="chesscake"></a>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card__title"> Chessecake </h3>
+                                <a href="./pages/chesscake.html"><img src="./img/chesscake.jpeg" alt="chesscake"></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="tortas-card">
-                        <h3> Chessecake </h3>
-                        <a href="./pages/chesscake.html"><img src="./img/chesscake.jpeg" alt="chesscake"></a>
-
-                        <p> precio : $25000</p>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3> Semi Frio Pistacho </h3>
+                                <a href="./pages/pistacho.html"><img src="./img/semifrio_pistacho.jpeg"
+                                        alt="Pistacho"></a>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card__title"> Semi Frio Pistacho</h3>
+                                <a href="./pages/pistacho.html"><img src="./img/semifrio_pistacho.jpeg"
+                                        alt="Pistacho"></a>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="tortas-card">
-                        <h3> Imperial Ruso </h3>
-                        <a href="./pages/imperialruso.html"><img src="./img/imperia_ruso.jpeg" alt="Imperial Ruso"></a>
-                        <p> precio : $45000</p>
+                    <div class="card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3> Imperial Ruso </h3>
+                                <a href="./pages/imperialruso.html"><img src="./img/imperia_ruso.jpeg" alt="Imperial Ruso"></a>
+                            </div>
+                            <div class="card-back">
+                                <h3 class="card__title"> Imperial Ruso </h3>
+                                <a href="./pages/imperialruso.html"><img src="./img/imperia_ruso.jpeg" alt="Imperial Ruso"></a>
+                            </div>
+                        </div>
                     </div>
+
                 </section>
             </div>
+            
             <section class="sectores">
-                <h3> Otros productos </h3>
-                <div class=>
-                    <div class="container_grid">
-                        <div id="box1" class="imgbox"><!-- aca podria ponerle un "a" i linkearlo a una pag x cada prod-->
-                            <img src="./img/limon_pie.jpeg" alt="Limon Pie">
-                            <div class="textprod">
-                                <h3>Limon Pie </h3>
-                                <p> precio : $ 35000 </p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
+                    <h3> Otros Productos </h3>
+                <div class="container_grid">
+                    <div class="box1 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Limon Pie</h4>
+                            </div>
+                                <img src="./img/limon_pie.jpeg" alt="Limon Pie">
+                            <div class="card__content">
+                                <h3 class="card__title">Limon Pie</h3>
+                                <p> precio : $25000</p>
+                                <p class="detralle"> Cheesecake cremoso y suave, con base crocante y sabor equilibrado.
+                                Para saber más, haz click.</p>                            
                             </div>
                         </div>
-                        <div id="box2" class="imgbox">
-                            <img src="./img/red_velvet.jpeg" alt="Red Velvet">
-                            <div class="textprod">
-                                <h3> Red Velvet</h3>
-                                <p> precio : $55000</p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box3" class="imgbox">
-                            <img src="./img/rogel.jpeg" alt="Rogel">
-                            <div class="textprod">
-                                <h3> Rogel </h3>
-                                <p> precio : $35000 </p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box4" class="imgbox">
-                            <img src="./img/semifrio_pistacho.jpeg" alt="semi frio Pistacho">
-                            <div class="textprod">
-                                <h3> Semi Frio Pistacho </h3>
-                                <p> precio : $45000</p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores ad expedita quo
-                                    placeat fugit perspiciatis autem, reiciendis corporis, ullam quae laudantium illum
-                                    dolores.</p>
-                            </div>
-                        </div>
-                        <div id="box5" class="imgbox">
-                            <img src="./img/stroisser.jpeg" alt="stroisser">
-                            <div class="textprod">
-                                <h3> Stroiser</h3>
-                                <p> precio : $35000</p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores ..</p>
-                            </div>
-                        </div>
-                        <div id="box6" class="imgbox">
-                            <img src="./img/tarta_frutilla.jpeg" alt="Tarta Frutilla">
-                            <div class="textprod">
-                                <h3> Tarta de Frutilla </h3>
-                                <p> precio : $45000</p>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box7" class="imgbox">
-                            <img src="./img/avocado.jpg" alt="avocado">
-                            <div class="textprod">
-                                <h3>Avocado toust </h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box8" class="imgbox">
-                            <img src="./img/cafe-con-medialunasjpg.jpg" alt="cafeymedialunas">
-                            <div class="textprod">
-                                <h3> Cafe con Medialunas</h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box9" class="imgbox">
-                            <img src="./img/cafe-y-tostado.jpg" alt="cafe y tostado">
-                            <div class="textprod">
-                                <h3> Cafe y tostado</h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box10" class="imgbox">
-                            <img src="./img/cafeconleche.jpg" alt="cafe con leche">
-                            <div class="textprod">
-                                <h3>cafe con leche</h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box11" class="imgbox">
-                            <img src="./img/paquete-cafe-1.jpg" alt="paquete cafe1">
-                            <div class="textprod">
-                                <h3>paquete cafe</h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
-                        <div id="box12" class="imgbox">
-                            <img src="./img/paquete-cafe-2.jpg" alt="paquete cafe2">
-                            <div class="textprod">
-                                <h3>paquete cafe</h3>
-                                <p class="detralle"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                    Consequuntur minima ab recusandae rerum impedit eaque maiores .</p>
-                            </div>
-                        </div>
+                    </div>
 
+                    <div class="box2 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Red Velvet</h4>
+                            </div>
+                                <img src="./img/red_velvet.jpeg" alt="Red Velvet">
+                            <div class="card__content">
+                                <h3 class="card__title"> Red Velvet</h3>
+                                <p> precio : $55000</p>
+                                <p class="detralle"> Bizcochuelo aterciopelado, suave y húmedo, con delicadas notas de
+                                cacao y crema equilibrada. Para saber más, haz click.</p>                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box3 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Rogel</h4>
+                            </div>
+                                <img src="./img/rogel.jpeg" alt="Rogel">
+                            <div class="card__content">
+                                <h3 class="card__title"> Rogel </h3>
+                                <p> precio : $35000 </p>
+                                <p class="detralle">Capas crocantes de masa fina unidas con abundante dulce de leche y
+                                terminación suave. Para saber más, haz click.</p>                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box4 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Tarta de Frutilla</h4>
+                            </div>
+                                <img src="./img/tarta_frutilla.jpeg" alt="Tarta Frutilla">
+                            <div class="card__content">
+                                <h3 class="card__title"> Tarta de Frutilla </h3>
+                                <p> precio : $35000 </p>
+                                <p class="detralle">Masa crocante, crema suave y frutillas frescas que aportan frescura y color. Para saber más, haz click.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box5 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Stroiser</h4>
+                            </div>
+                                <img src="./img/stroisser.jpeg" alt="stroisser">
+                            <div class="card__content">
+                                <h3 class="card__title"> Stroiser</h3>
+                                    <p> precio : $35000</p>
+                                    <p class="detralle">Base crocante con relleno suave y cubierta crumble dorada,
+                                    equilibrando textura y sabor. Para saber más, haz click.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box6 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Taza Cokie</h4>
+                            </div>
+                            <img src="./img/taza_cokies.jpeg" alt="3taza" class="tazasImg" >
+                            <div class="card__content">
+                                <h3 class="card__title"> Taza Cokie </h3>
+                                    <p> precio : $45000</p>
+                                    <p class="detralle">Taza con diseño de cookie, original y encantadora, ideal para sumar
+                                    un toque dulce a tu café. Para saber más, haz click.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box7 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Taza Crema</h4>
+                            </div>
+                            <img src="./img/taza_crema.jpeg" alt="1taza" class="tazasImg" >
+                            <div class="card__content">
+                                <h3 class="card__title">Taza Crema</h3>
+                                <p> precio : $45000</p>
+                                <p class="detralle"> Taza de cerámica con diseño delicado y detalles sutiles, ideal para
+                                disfrutar bebidas calientes con estilo y calidez. Para saber más, haz click.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box8 imgbox">
+                        <div class="card_op">
+                            <div class="card__header">
+                                <h4 class="card__title">Taza Muffin</h4>
+                            </div>
+                            <img src="./img/taza_mophin_NUEVA.jpeg" alt="1taza" class="tazasImg">
+                            <div class="card__content">
+                                <h3 class="card__title"> Taza Muffin Rosa</h3>
+                                <p> precio : $45000</p>
+                                <p class="detralle">Taza con forma de muffin rosa, dulce y original, perfecta para sumar
+                                un toque divertido a tu café. Para saber más, haz click.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
+        </section>
 
-            <section class="sectores">
-                <h2> Tazas Personalizadas</h2>
-                <!-- no hice el link xq considere que demostre que se usarlo al hacer lo mismo con las tortas)-->
-                <div id="tazas" class="container">
-                    <section class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato1.jpg" alt="1taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato2.jpg" alt="2taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato3.jpg" alt="3taza" class="tazasImg">
-                        </div>
-                    </section>
-                    <section class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato1.jpg" alt="1taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato2.jpg" alt="2taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato3.jpg" alt="3taza" class="tazasImg">
-                        </div>
-                    </section>
-                    <section class="row">
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato1.jpg" alt="1taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato2.jpg" alt="2taza" class="tazasImg">
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="./img/tazagato3.jpg" alt="3taza" class="tazasImg">
-                        </div>
-                    </section>
-
-
-
-                </div>
-            </section>
             <section class="sectores">
                 <h2>Nosotros</h2>
                 <div class="Nosotros">
                     <div>
                         <p>Mi Dulce Lucía nació hace más de diez años inspirada en la dulzura de mi sobrina, quien le
                             dio su nombre y su espíritu. Crecimos junto a nuestras familias de clientes, creando sabores
-                            que despiertan recuerdos y construyen pertenencia en cada celebración.
+                            que despiertan recuerdos y construyen pertenencia en cada celebración.</p>
                         <p>Gracias por elegirnos.</p>
                         <p>Sabores que celebran momentos.</p>
-                        <p> Si te interesa mas de nuestra historia haz Click<a
-                                href="./pages/NuestraHistoria.html">Aqui</a></p>
+                        <p>Si te interesa más de nuestra historia haz click
+                            <a href="./pages/NuestraHistoria.html">Aquí</a>
+                        </p>
                     </div>
+                </div>
             </section>
             </div>
             <Section class="sectores">
@@ -287,15 +292,16 @@
                             <label for="mail"> Mail</label>
                             <input></input>
 
-                            <lebel for="comentarios"> Comentarios</lebel>
-                            <textarea id="comentarios"></textarea>
+                            <label for="comentarios"> Comentarios</label>
+                            <textarea class="comentarios"></textarea>
                             <button> Iniciar Pedido</button>
                         </form>
                     </div>
                 </div>
             </Section>
-        </section>
+        
     </main>
+
     <footer>
         <section class="sectores">
             <div>Copyright "Mi Dulce lucia"</div>
@@ -303,10 +309,7 @@
         </section>
 
 
-        <div> <a href="./pages/sobre_nosotros.html">
-                <h3>Nosotros</h3>
-            </a>
-
+        <div><h3>Nosotros</h3>
         </div>
         <div>
             <h3>Medios de Pago</h3><!---aca podria linkiarlo a un especie de mercado pago o similar-->
@@ -330,9 +333,3 @@
 </body>
 
 </html>
-
-<!-- Profe:
-    en este proyecto quise simular el sitio web de una panaderia/confiteria, hay etiquetas en donde no hice el link xq ya lo habia en otros, e interprete q lo aprendido en linkiar ya estaba cumplido.
-    me ayude en aprender algo de FLEX con chatgpt, habia otras cosas para usar chatgpt pero perdia autonomia en aprender.
-    el Sketch, es similar a la idea, pero fui modificandolo.
--->

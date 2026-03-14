@@ -1,0 +1,21 @@
+
+.pedidos form{
+    display: flex;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+input, textarea{
+    border-radius: 200px;
+    border: solid #EEE8D5;
+}
+.comentarios{
+    margin-bottom: 20px;
+}
+button{
+    border-radius: 10%;
+    padding: 2%;
+}
+
